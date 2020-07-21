@@ -14,18 +14,22 @@
         <nav class="flex-nav">
             <h2>Photo Gallery</h2>
             <div class="search-container">
-                <input type="text" class="search-input">
-                <button class="submit-btn">Search</button>
+                <form id="search-form">
+                    <span class="alert-mssg"></span>
+                    <input type="text" class="search-input" autocomplete="on">
+                    <button type="submit" class="submit-btn">Search</button>
+                </form>
             </div>
         </nav>
     </header>
     <main>
-        <div class="main-banner" role="banner">
+        <div id="banner" class="main-banner" role="banner">
             <h1>My Website</h1>
             <p>With a <b>flexible</b> layout.</p>
         </div>
-        <section class="photo-container">
-            <div class="col-1 column"></div>
+        <section id="main-photo" class="photo-container">
+            <div class="status-mssg"></div>
+            <div class="col-1 ph-col column"></div>
             <div class="col-2 column"></div>
             <div class="col-3 column"></div>
         </section>

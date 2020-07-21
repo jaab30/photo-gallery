@@ -2,13 +2,24 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:#f4f5f7;
+}
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 60px;;
-    background-color: rgb(2, 26, 80);
+    background-color: #0b1424;
+}
+.header-scroll {
+    border-bottom: solid 2px #ff2066;
 }
 .flex-nav {
     display: flex;
@@ -23,6 +34,7 @@ nav > h2 {
     color: white;
 }
 
+
 .search-container {
     display: flex;
     justify-content: flex-end;
@@ -30,24 +42,52 @@ nav > h2 {
     align-items: center;
 }
 
-.search-container > input {
+form > input {
     width: 200px;
     margin-right: 5px;
-    padding: 5px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+/* form > input:focus {
+   outline: 1px solid rgb(255, 98, 34, .5);
+   border-radius: 5px;
+
+} */
+
+form > button {
+    padding: 7px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #ff2066;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form > button:hover {
+   
+    background-color: rgb(255, 32, 102, .7);
+    
+}
+form > button:focus {
+   outline: 0;
 }
 
-.search-container > button {
-    padding: 5px 10px;
-    margin-right: 20px;
+
+
+.alert-mssg {
+    color: white;
+    margin-right: 10px;
 }
 
 .main-banner {
     padding: 60px;
     text-align: center;
-    background-color: rgb(2, 26, 80);
+    background-color: #0b1424;
     color: white;
     width: 100%;
     margin: 60px auto 0;
+    border-bottom: solid 2px #ff2066;
   }
 
   .photo-container {
@@ -55,7 +95,7 @@ nav > h2 {
       flex-direction: row;
       flex-flow: row wrap;
       width: 80%;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       justify-content: center;
   }
 
@@ -65,8 +105,30 @@ nav > h2 {
       padding: 4px;  
     }
 
-    img {
-        vertical-align: middle;
+    .photo-background {
+        /* vertical-align: middle; */
         width: 100%;
+        min-height: 150px;
         margin-top: 8px;
+        background-image: url("../images/loading1.gif");
+        background-color: white; 
+        /* background-color: #0b1424;  */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+        padding:0;
+
     }
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+    }
+/* 
+    #0b1424
+    #ff224e
+    #ff6222
+    #ff890a */
+    /* ff047f */
