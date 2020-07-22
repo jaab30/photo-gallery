@@ -1,4 +1,4 @@
-/* Global styling */
+/* ****** Global styling ******  */
 * {
     box-sizing: border-box;
 }
@@ -48,8 +48,8 @@ nav > h1 > a {
     padding: 5px;
     font-family: 'Prosto One', Arial, sans-serif;
     font-size: 2.3em;
-    color: rgb(255, 32, 102, .7);
-    border: solid 3px rgb(255, 32, 102, .7);
+    color: rgba(255, 32, 102, .7);
+    border: solid 3px rgba(255, 32, 102, .7);
     border-radius: 5px;
     text-decoration: none;
     
@@ -77,21 +77,21 @@ form > button {
     padding: 7px 15px;
     margin-right: 20px;
     border-radius: 5px;
-    background-color: rgb(255, 32, 102, .5);;
+    background-color: rgba(255, 32, 102, .5);;
     color: #f4f5f7;
     border: none;
     cursor: pointer;
 }
 form > button:hover {
    
-    background-color: rgb(255, 32, 102, .3);
+    background-color: rgba(255, 32, 102, .3);
     
 }
 form > button:focus {
    outline: 0;
 }
 form > button:active {
-    background-color: rgb(255, 32, 102, .5);
+    background-color: rgba(255, 32, 102, .5);
 
 }
 
@@ -122,7 +122,7 @@ form > button:active {
 .main-banner > p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    color: rgb(244, 245, 247, .8);
+    color: rgba(244, 245, 247, .8);
     margin-top: 10px;
 }
 
@@ -147,7 +147,7 @@ p.banner-search {
     text-align: center;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
-    color: rgb(255, 32, 102);
+    color: rgba(255, 32, 102);
     padding: 30px;
     line-height: 1.5em;
 }
@@ -180,6 +180,7 @@ img {
 /* ****** Footer ****** */
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80px;
@@ -188,6 +189,12 @@ footer {
     width: 100%;
     border-top: solid 2px #ff2066;
     font-family: 'Roboto', sans-serif;
+    font-size: .7em;
+    line-height: 1.6em;
+    padding: 10px;
+}
+footer > a {
+   color: white;
 }
 
 /* ****** Media Queries ****** */
