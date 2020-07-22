@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;500;700&family=Prosto+One&family=Roboto:wght@300;500;700&family=Rowdies:wght@300;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Photo Gallery</title>
@@ -12,7 +15,8 @@
 <body>
     <header>
         <nav class="flex-nav">
-            <h2>Photo Gallery</h2>
+            <a href="index.html" class="logo">PG</a>
+            <h1>Photo Gallery</h1>
             <div class="search-container">
                 <form id="search-form">
                     <span class="alert-mssg"></span>
@@ -24,11 +28,10 @@
     </header>
     <main>
         <div id="banner" class="main-banner" role="banner">
-            <h1>My Website</h1>
-            <p>With a <b>flexible</b> layout.</p>
+            <h1 class="banner-title">Welcome to Photo Gallery</h1>
+            <p class="banner-text">The best way to search for Photos..!</p>
         </div>
         <section id="main-photo" class="photo-container">
-            <div class="status-mssg"></div>
             <div class="col-1 ph-col column"></div>
             <div class="col-2 column"></div>
             <div class="col-3 column"></div>
@@ -36,7 +39,7 @@
 
     </main>
     <footer>
-
+        <p>Photo Gallery &#169; 2020</p>
     </footer>
 
 

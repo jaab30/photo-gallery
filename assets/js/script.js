@@ -1,5 +1,4 @@
 
-
 const listenScrollEvent = e => {
     if (window.scrollY < 200) {
         $("header").removeClass("header-scroll");
@@ -10,7 +9,8 @@ const listenScrollEvent = e => {
 
 window.addEventListener('scroll', listenScrollEvent)
 
-
+// $(".banner-title").text("Welcome to Photo Gallery");
+// $(".banner-text").text("The best way to search for Photos..!")
 
 
 const getQuery = (e) => {
@@ -21,7 +21,10 @@ const getQuery = (e) => {
     $(".search-input").val("");
     $(".alert-mssg").text("");
     $(".status-mssg").text("");
+    $(".banner-title").text("");
+    $(".banner-text").addClass("banner-search").text(`Search results for: ${query}`)
 
+    window.location.href = "#banner";
 }
 
 const getPhotos = async (query) => {
@@ -29,7 +32,6 @@ const getPhotos = async (query) => {
     const response = await $.get(`https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=urPpuulEpzzAkhzft7TJA5Q6UEyyDL9tTaALLgnWsz8&per_page=27`);
 
     displayResults(response, query);
-    window.location.href = "#banner";
 }
 
 const renderPhoto = (url, altInfo) => {
@@ -47,12 +49,11 @@ const displayResults = (response, query) => {
     $(".col-2").empty();
     $(".col-3").empty();
     if (response.results.length === 0) {
-        $(".status-mssg").text(`Could not find any records for ${query}. Please, try again... Thanks..!`)
+        $(".banner-text").html(`<p class="status-mssg">Could not find any records for: ${query}.</p> <p>Please, try again... Thanks..!</p>`)
     }
     let colIndex = 1;
     for (let i = 0; i < response.results.length; i++) {
         const { urls, alt_description } = response.results[i];
-        console.log(colIndex);
         $(".col-" + colIndex).append(renderPhoto(urls.small, alt_description));
         if (colIndex === 3) {
             colIndex = 0
@@ -63,6 +64,7 @@ const displayResults = (response, query) => {
 
 $("#search-form").on("submit", getQuery)
 
+getPhotos("random");
 // console.log(colIndex);
 // if (i < 9) {
 //     $(".col-1").append(renderPhoto(urls.small, alt_description));
