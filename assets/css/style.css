@@ -34,7 +34,12 @@ nav > h1 {
     font-family: 'Bebas Neue', Arial, sans-serif;
     font-size: 2.5em;
     padding: 25px 25px 5px 5px;
+}
+
+nav > h1 > a {
+    text-decoration: none;
     color: #f4f5f7;
+
 }
 .logo {
     margin-top: 15px;
@@ -181,6 +186,95 @@ footer {
     font-family: 'Roboto', sans-serif;
 
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    header {
+        height: 150px;
+    }
+    .flex-nav {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .search-container {
+        justify-content: center;
+    }
+    .main-banner {
+        padding: 100px;
+      }
+
+    .main-banner > h1 {
+        font-size: 2em;
+        padding: 15px;
+        }
+    
+    .main-banner > p {
+        font-size: 1.2em;
+        margin-top: 5px;
+        }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .main-banner {
+        padding: 100px 0 20px;
+      }
+    .main-banner > h1 {
+        font-size: 1.8em;
+        }
+  }
+  @media (max-width: 400px) {
+    .flex-nav {
+        display: initial;
+        text-align: center;
+        /* justify-content: flex-start;
+        width: 80%;
+        margin: 0 auto; */
+    }
+
+    header {
+        height: 200px;
+    }
+    nav > h1 {
+        padding: 5px;
+    }
+    a.logo {
+        display: block;
+        border: none;
+        font-size: 3em;
+        /* width: 100px; */
+    }
+    
+    form > button {
+        padding: 7px 15px;
+        margin: 10px 0 0 0;
+        
+    }
+
+    form {
+        text-align: center;
+    }
+    .main-banner {
+        padding: 160px 0 20px;
+      }
+    .main-banner > h1 {
+        font-size: 1.8em;
+        }
+  }
+
+
+
+
 /* 
     #0b1424
     #ff224e
