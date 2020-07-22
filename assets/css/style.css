@@ -46,8 +46,8 @@ nav > h1 > a {
     padding: 5px;
     font-family: 'Prosto One', Arial, sans-serif;
     font-size: 2.3em;
-    color: rgb(255, 32, 102, .3);
-    border: solid 3px rgb(255, 32, 102, .3);
+    color: rgb(255, 32, 102, .7);
+    border: solid 3px rgb(255, 32, 102, .7);
     border-radius: 5px;
     text-decoration: none;
     
@@ -187,7 +187,19 @@ footer {
 
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media (max-width: 1050px) {
+    form {
+        position: relative;
+    }
+
+    .alert-mssg {
+        position: absolute;
+        bottom: -20px;
+        left: 10px;
+        font-size: .8em;
+    }
+  }
 @media (max-width: 800px) {
 
     .column {
@@ -206,7 +218,7 @@ footer {
         justify-content: center;
     }
     .main-banner {
-        padding: 100px;
+        padding: 120px 0 20px;
       }
 
     .main-banner > h1 {
@@ -227,7 +239,7 @@ footer {
       max-width: 100%;
     }
     .main-banner {
-        padding: 100px 0 20px;
+        padding: 120px 0 20px;
       }
     .main-banner > h1 {
         font-size: 1.8em;
@@ -243,7 +255,7 @@ footer {
     }
 
     header {
-        height: 200px;
+        height: 210px;
     }
     nav > h1 {
         padding: 5px;
@@ -265,7 +277,7 @@ footer {
         text-align: center;
     }
     .main-banner {
-        padding: 160px 0 20px;
+        padding: 180px 0 20px;
       }
     .main-banner > h1 {
         font-size: 1.8em;

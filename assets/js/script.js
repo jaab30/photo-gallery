@@ -16,7 +16,7 @@ window.addEventListener('scroll', listenScrollEvent)
 const getQuery = (e) => {
     e.preventDefault();
     const query = $(".search-input").val().trim();
-    if (!query) return $(".alert-mssg").html(`Please Enter a Search Term &#8594;`);
+    if (!query) return $(".alert-mssg").text(`Please Enter a Search Term`);
     getPhotos(query)
     $(".search-input").val("");
     $(".alert-mssg").text("");
