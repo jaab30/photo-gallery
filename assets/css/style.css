@@ -1,4 +1,4 @@
-
+/* Global styling */
 * {
     box-sizing: border-box;
 }
@@ -11,6 +11,7 @@ body {
     background-image: url("../images/dust_scratches.png");
 }
 
+/* ****** Header ****** */
 header {
     position: fixed;
     top: 0;
@@ -23,6 +24,7 @@ header {
     border-bottom: solid 2px #ff2066;
 }
 
+/* Nav Bar Styling */
 .flex-nav {
     display: flex;
     justify-content: flex-start;
@@ -53,6 +55,7 @@ nav > h1 > a {
     
 }
 
+/* Search Form Styling */
 .search-container {
     display: flex;
     justify-content: flex-end;
@@ -98,6 +101,7 @@ form > button:active {
     font-family: 'Roboto', sans-serif;
 }
 
+/* ****** Banner Styling ****** */
 .main-banner {
     padding: 60px;
     text-align: center;
@@ -106,28 +110,29 @@ form > button:active {
     width: 100%;
     margin: 60px auto 0;
     border-bottom: solid 2px #ff2066;
-  }
+}
 
 .main-banner > h1 {
     font-family: 'Rowdies', Arial, sans-serif;
     font-size: 2.5em;
     padding: 10px;
     color: #f4f5f7;
-    }
+}
 
 .main-banner > p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     color: rgb(244, 245, 247, .8);
     margin-top: 10px;
-    }
+}
 
 p.banner-search {
     color: #f4f5f7;
     font-size: 2em;
     margin-top:20px
-    }
+}
 
+/* ****** Main Photo Container ******* */
 .photo-container {
     display: flex;
     flex-direction: row;
@@ -136,7 +141,6 @@ p.banner-search {
     margin: 0 auto 20px;
     justify-content: center;
     min-height: 500px;
-    
 }
 
 .status-mssg {
@@ -164,7 +168,6 @@ p.banner-search {
     background-repeat: no-repeat;
     background-size: 50% auto;
     padding:0;
-
 }
 
 img {
@@ -174,6 +177,7 @@ img {
     padding:0;
 }
 
+/* ****** Footer ****** */
 footer {
     display: flex;
     justify-content: center;
@@ -184,79 +188,85 @@ footer {
     width: 100%;
     border-top: solid 2px #ff2066;
     font-family: 'Roboto', sans-serif;
-
 }
 
+/* ****** Media Queries ****** */
 
 @media (max-width: 1050px) {
+    /* Form */
     form {
         position: relative;
     }
-
     .alert-mssg {
         position: absolute;
         bottom: -20px;
         left: 10px;
         font-size: .8em;
     }
-  }
-@media (max-width: 800px) {
+}
 
+@media (max-width: 800px) {
+/* Photo Container Columns */
     .column {
         flex: 50%;
         max-width: 50%;
     }
+/* Header */
     header {
         height: 150px;
     }
+/* Nav */
     .flex-nav {
         flex-flow: row wrap;
         justify-content: center;
     }
-    
+
+/* Form */
     .search-container {
         justify-content: center;
     }
+/* Banner */
     .main-banner {
         padding: 120px 0 20px;
-      }
+    }
 
     .main-banner > h1 {
         font-size: 2em;
         padding: 15px;
-        }
+    }
     
     .main-banner > p {
         font-size: 1.2em;
         margin-top: 5px;
-        }
-  }
+    }
+}
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
+/* Photo Container Columns */
     .column {
       flex: 100%;
       max-width: 100%;
     }
+/* Banner */
     .main-banner {
         padding: 120px 0 20px;
-      }
+    }
     .main-banner > h1 {
         font-size: 1.8em;
-        }
-  }
+    }
+}
+
   @media (max-width: 400px) {
+/* Nav */
     .flex-nav {
         display: initial;
         text-align: center;
-        /* justify-content: flex-start;
-        width: 80%;
-        margin: 0 auto; */
     }
-
+/* Header */
     header {
         height: 210px;
     }
+/* Nav */
     nav > h1 {
         padding: 5px;
     }
@@ -264,38 +274,20 @@ footer {
         display: block;
         border: none;
         font-size: 3em;
-        /* width: 100px; */
     }
-    
+/* Form */
     form > button {
         padding: 7px 15px;
         margin: 10px 0 0 0;
-        
     }
-
     form {
         text-align: center;
     }
+/* Banner */
     .main-banner {
         padding: 180px 0 20px;
-      }
+    }
     .main-banner > h1 {
         font-size: 1.8em;
-        }
-  }
-
-
-
-
-/* 
-    #0b1424
-    #ff224e
-    #ff6222
-    #ff890a */
-    /* ff047f */
-
-    /* font-family: 'Bebas Neue', cursive;
-font-family: 'Oswald', sans-serif;
-font-family: 'Prosto One', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Rowdies', cursive; */
+    }
+}
