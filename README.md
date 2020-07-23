@@ -11,7 +11,7 @@ This web app is a simple Front End Application that searches for images using th
 
 ## Web Tools:
 
-Web Tools: HTML, CSS, JavaScript.
+Web Tools: HTML, CSS, JavaScript and jQuery.
 
 ## Questions or Suggestions
 
