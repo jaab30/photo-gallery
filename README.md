@@ -22,7 +22,7 @@ If you have any questions about the repo or any suggestions, open an issue or co
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaab30/passport-auth-with-mysql-and-sequelize-boiler-plate)
 
 
-## images
+## App images
 
 <img src="https://user-images.githubusercontent.com/40499942/88186602-60d8a380-cc03-11ea-8f2c-221e116cc181.png" alt="portfolio_pix" width="500px">
 
